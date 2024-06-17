@@ -12,6 +12,13 @@ Keywords:
 请依次输入1.Keyword;2.数据所在文件夹;3.match_pairs.exe所在文件夹;4.分块数量(平方数);5、是否已生成该区域的建筑物掩膜(1/ 0);6、建筑物掩膜类型(DOM/ BASEMAP);7、是否使用底图建筑物掩膜来进行高程置信度赋权(1/ 0);8、是否进行调参(1/ 0);9、调参类型(RANSAC_Iter/ Basemap_Num，若不需要调参则不需要输入该参数)。请注意数据需要存放于match_pairs.exe同级的assets文件夹
 
 match_pairs.exe基于superpoint和superglue算法，具体文件和示例区域数据（Vaihingen区域）可通过夸克网盘链接下载：
+「VAIHINGEN_AREA.zip」
+链接：https://pan.quark.cn/s/c1181c2c58fc
+提取码：bm1Y
+
+「match_pairs_assets_empty.zip」（可将VAIHINGEN_AREA.zip解压后放到assets文件夹中）
+链接：https://pan.quark.cn/s/e2f93eb9bbc2
+提取码：NmYy
 
 命令行运行示例：
 D:\DSM_Rectification_by_Feature_Matching\DSM_Rectification_by_Feature_Matching.exe Geometric_Correction E:\Geometric_Correction_exe\match_pairs\assets\VAIHINGEN_AREA E:\Geometric_Correction_exe\match_pairs 9 1 BASEMAP 1 0
