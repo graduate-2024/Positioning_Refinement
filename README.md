@@ -23,11 +23,11 @@ Data should be stored in the "assets" folder at the same level as match_pairs.ex
 
 match_pairs.exe is based on the SuperPoint and SuperGlue algorithms. Specific files and sample regional data (Vaihingen area) can be downloaded via the following Quark Cloud link:
 
-「VAIHINGEN_AREA.zip」
+「VAIHINGEN_AREA」
 
-Link：https://pan.quark.cn/s/c1181c2c58fc
+Link：https://pan.quark.cn/s/9b5a2ba3c927
 
-Extraction Code：bm1Y
+Extraction Code：xkD4
 
 「match_pairs_assets_empty.zip」 (You can extract VAIHINGEN_AREA.zip and place it in the "assets" folder)
 
