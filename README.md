@@ -5,7 +5,7 @@ This software performs geometric correction of large-scale geographic products (
 
 This software is intended for academic research purposes only and has obtained copyright registration (Registration No.: 2023SR0580603). For any issues encountered during use, please contact: luoqy26@mail2.sysu.edu.cn
 
-## Keywords:
+## Keywords
 1. All;
 2. Feature_Matching;
 3. Geometric_Correction;
@@ -15,9 +15,13 @@ Please enter the following information in order: 1. Keyword; 2. Folder containin
 
 If using the multi-temporal base map control point averaging algorithms (2017: global averaging; 2024: multi-temporal averaging), please enter the following information in order: 1. Keyword; 2. Folder containing the data; 3. Folder where match_pairs.exe is located; 4. Number of blocks (square units); and 5. Method name (2017 or 2024).
 
-Note: Data should be stored in the "assets" folder at the same level as match_pairs.exe.
 
-## match_pairs.exe is based on the SuperPoint and SuperGlue algorithms. Specific files and sample regional data (Vaihingen area) can be downloaded via the following Quark Cloud link:
+
+## Note
+
+Data should be stored in the "assets" folder at the same level as match_pairs.exe.
+
+match_pairs.exe is based on the SuperPoint and SuperGlue algorithms. Specific files and sample regional data (Vaihingen area) can be downloaded via the following Quark Cloud link:
 
 「VAIHINGEN_AREA.zip」
 
