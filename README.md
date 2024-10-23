@@ -1,7 +1,9 @@
 # Positioning_Refinement
-软件名称：联合多时相多源底图的卫星地理产品几何校正软件
-本计算机软件实现基于多源多时相底图的大范围地理产品（DSM、DOM）的几何校正，支持Google Earth、ArcGIS、SRTM等数据源底图（8bit、WGS84 UTM坐标系、大地高），支持输入该区域建筑物掩膜达到更佳的几何校正精度（uint8的tif），采用分块整体平差方法实现
-该软件仅用于学术科研用途，已获软件著作权，登记号：2023SR0580603，如在使用中遇到问题，请邮件联系luoqy26@mail2.sysu.edu.cn
+Software Name: Geometric Correction Software for Satellite Geographic Products Using Joint Multi-Temporal and Multi-Source Base Maps
+
+This software performs geometric correction of large-scale geographic products (DSM, DOM) based on multi-source and multi-temporal base maps. It supports data sources such as Google Earth, ArcGIS, and SRTM (8-bit, WGS84 UTM coordinate system, and ellipsoidal height). The software allows for the input of building masks for the area to achieve better geometric correction accuracy (uint8 TIFF format) and implements a block-wise overall adjustment method.
+
+This software is intended for academic research purposes only and has obtained copyright registration (Registration No.: 2023SR0580603). For any issues encountered during use, please contact: luoqy26@mail2.sysu.edu.cn
 
 Keywords:
 1. All;
@@ -9,16 +11,21 @@ Keywords:
 3. Geometric_Correction;
 4. Precision_Evaluation.
 
-请依次输入1.Keyword;2.数据所在文件夹;3.match_pairs.exe所在文件夹;4.分块数量(平方数);5、是否已生成该区域的建筑物掩膜(1/ 0);6、建筑物掩膜类型(DOM/ BASEMAP);7、是否使用底图建筑物掩膜来进行高程置信度赋权(1/ 0);8、是否进行调参(1/ 0);9、调参类型(RANSAC_Iter/ Basemap_Num，若不需要调参则不需要输入该参数)。请注意数据需要存放于match_pairs.exe同级的assets文件夹
+Please enter the following information in order: 1. Keyword; 2. Folder containing the data; 3. Folder where match_pairs.exe is located; 4. Number of blocks (square units); 5. Whether the building mask for the area has been generated (1 for yes, 0 for no); 6. Type of building mask (DOM or BASEMAP); 7. Whether to use the base map building mask for elevation confidence weighting (1 for yes, 0 for no); 8. Whether to perform parameter tuning (1 for yes, 0 for no); and 9. Type of parameter tuning (RANSAC_Iter or Basemap_Num; this parameter is not needed if tuning is not required).
 
-match_pairs.exe基于superpoint和superglue算法，具体文件和示例区域数据（Vaihingen区域）可通过夸克网盘链接下载：
+If using the multi-temporal base map control point averaging algorithms (2017: global averaging; 2024: multi-temporal averaging), please enter the following information in order: 1. Keyword; 2. Folder containing the data; 3. Folder where match_pairs.exe is located; 4. Number of blocks (square units); and 5. Method name (2017 or 2024).
+
+Note: Data should be stored in the "assets" folder at the same level as match_pairs.exe.
+
+match_pairs.exe is based on the SuperPoint and SuperGlue algorithms. Specific files and sample regional data (Vaihingen area) can be downloaded via the following Quark Cloud link:
+
 「VAIHINGEN_AREA.zip」
-链接：https://pan.quark.cn/s/c1181c2c58fc
-提取码：bm1Y
+Link：https://pan.quark.cn/s/c1181c2c58fc
+Extraction Code：bm1Y
 
-「match_pairs_assets_empty.zip」（可将VAIHINGEN_AREA.zip解压后放到assets文件夹中）
-链接：https://pan.quark.cn/s/e2f93eb9bbc2
-提取码：NmYy
+「match_pairs_assets_empty.zip」 (You can extract VAIHINGEN_AREA.zip and place it in the "assets" folder)
+Link：https://pan.quark.cn/s/e2f93eb9bbc2
+Extraction Code：NmYy
 
-命令行运行示例：
+Command line run example:
 D:\DSM_Rectification_by_Feature_Matching\DSM_Rectification_by_Feature_Matching.exe Geometric_Correction E:\Geometric_Correction_exe\match_pairs\assets\VAIHINGEN_AREA E:\Geometric_Correction_exe\match_pairs 9 1 BASEMAP 1 0
