@@ -1,5 +1,5 @@
 # Positioning_Refinement
-## Software Name: Geometric Correction Software for Satellite Geographic Products Using Joint Multi-Temporal and Multi-Source Base Maps
+## Software Name: SEGPR: Semantic-Enhanced Geo-Positioning Refinement of Satellite Geographic Products by Combining Multi-Temporal Coarse-Accuracy Geographic Base Maps
 
 This software performs geometric correction of large-scale geographic products (DSM, DOM) based on multi-source and multi-temporal base maps. It supports data sources such as Google Earth, ArcGIS, and SRTM (8-bit, WGS84 UTM coordinate system, and ellipsoidal height). The software allows for the input of building masks for the area to achieve better geometric correction accuracy (uint8 TIFF format) and implements a block-wise overall adjustment method.
 
