@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerCommandArguments>Geometric_Correction E:\Geometric_Correction_exe\match_pairs\assets\ZHUHAI_AREA E:\Geometric_Correction_exe\match_pairs 9 1 BASEMAP 1 0</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>Geometric_Correction F:\Geometric_Correction_exe\match_pairs\assets\POTSDAM_AREA F:\Geometric_Correction_exe\match_pairs 9 1 BASEMAP 1 1 Basemap_Num</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>Geometric_Correction E:\Geometric_Correction_exe\match_pairs\assets\POTSDAM_AREA E:\Geometric_Correction_exe\match_pairs 16 1 BASEMAP 1 0</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>Geometric_Correction F:\Geometric_Correction_exe\match_pairs\assets\HOBART_AREA F:\Geometric_Correction_exe\match_pairs 25 1 BASEMAP 1 1 Basemap_Num</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>
